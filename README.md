@@ -361,12 +361,9 @@ print(metrics.classification_report(mydata_test.target, predicted, target_names=
     
 
 
-Note that precision is informally defined as the following:
-$$precision = \frac{(relevant \hspace{2mm} documents) \cup (classified \hspace{2mm} documents) }{classified \hspace{2mm} documents}$$
+Note that precision is informally defined as the following: ![](images/precision.png)
 
-We also have the informal definition of recall here: 
-
-$$recall = \frac{(relevant \hspace{2mm} documents) \cup (classified \hspace{2mm} documents) }{relevant \hspace{2mm} documents}$$
+We also have the informal definition of recall here: ![](images/recall.png)
 
 So based on what we know about these evaluation metrics, when Multinomial Naive Bayes classifies a document,  it is very likely that it selects the correct one.  
 
@@ -375,7 +372,7 @@ The one category where this does not apply is the `soc.religion.christian` categ
 
 The *F measure* is then defined as the harmonic mean of precision and recall.
 
-$$F = 2 \cdot \frac{(precision) \cdot (recall) }{precision + recall}$$
+![](images/F.png)
 
  ## Training a Logistic Regression Classifier
 
